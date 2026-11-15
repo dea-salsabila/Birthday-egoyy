@@ -3,148 +3,70 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday Egi 🖤</title>
+<title>Happy Birthday Sayang</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
 <style>
-  *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
-  body{background:#0a0a0a;color:#eee;text-align:center;overflow-x:hidden}
-  .hero{padding:60px 20px 30px;background:linear-gradient(180deg,#000,#1a1a1a)}
-  .hero h1{font-size:42px;letter-spacing:2px}
-  .hero h1 span{color:#fff;text-shadow:0 0 20px #fff}
-  .hero p{color:#aaa;margin-top:10px}
-  .badge{background:#fff;color:#000;display:inline-block;padding:8px 20px;border-radius:50px;font-weight:bold;margin-top:20px}
-  .card{background:#141414;border:1px solid #333;border-radius:20px;padding:25px;margin:20px auto;max-width:650px;text-align:left;line-height:1.8}
-  .card h2{text-align:center;margin-bottom:15px;font-size:26px}
-  .card p{color:#ddd}
-  .gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-  .gallery img{width:100%;height:200px;object-fit:cover;border-radius:15px;border:2px solid #444;filter:grayscale(100%)}
-  .gallery p{grid-column:1/3;text-align:center;color:#888;font-size:13px}
-  .cake-wrap{padding:20px}
-  .cake{font-size:100px;position:relative;display:inline-block}
-  .flame{position:absolute;top:-10px;font-size:35px;animation:flick 0.5s infinite alternate}
-  @keyframes flick{from{transform:scale(1) rotate(-3deg)}to{transform:scale(1.2) rotate(3deg)}}
-  .blow-btn{background:#fff;color:#000;border:none;padding:14px 28px;border-radius:50px;font-weight:bold;font-size:16px;cursor:pointer;margin-top:10px}
-  .letter{white-space:pre-line;font-style:italic}
-  .reason{background:#1e1e1e;border-left:4px solid #fff;padding:12px 15px;border-radius:10px;margin:10px 0}
-  .footer{padding:30px;color:#777;font-size:13px}
-  .count{font-size:28px;font-weight:bold;margin-top:15px}
-  audio{width:100%;margin-top:10px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#fff5f8;color:#333}
+.hero{min-height:100vh;background:linear-gradient(135deg,#ff8fab,#ffb3c6,#cdb4f6,#a2d2ff,#ffc8dd);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:30px 20px}
+.hero h3{font-size:13px;letter-spacing:3px;background:#fff;padding:8px 18px;border-radius:30px;color:#ff4d8d}
+.hero h1{font-size:52px;line-height:1;margin:18px 0;color:#fff;text-shadow:0 4px 20px rgba(0,0,0,.15)}
+.hero h1 span{display:block;font-family:'Playfair Display',serif;font-style:italic}
+.hero p{color:#fff;font-weight:600}
+.btn{margin-top:25px;background:#fff;color:#ff4d8d;padding:14px 28px;border-radius:30px;font-weight:800;text-decoration:none;box-shadow:0 10px 25px rgba(0,0,0,.15)}
+.section{padding:45px 20px;max-width:800px;margin:auto;text-align:center}
+.section h2{font-size:27px;margin-bottom:12px}
+.pink{background:#ffe8ef}.purple{background:#eee9ff}.peach{background:#fff0e6}.blue{background:#e6f4ff}
+.card{background:#fff;padding:22px;border-radius:22px;box-shadow:0 10px 30px rgba(0,0,0,.08);margin:12px 0;text-align:left}
+.card b{color:#ff4d8d}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:15px}
+.gallery img{width:100%;height:180px;object-fit:cover;border-radius:18px}
+.big-img{width:100%;height:320px;object-fit:cover;border-radius:24px;margin-top:15px}
+.cake-img{width:100%;height:340px;object-fit:cover;border-radius:24px;box-shadow:0 15px 35px rgba(255,77,141,.3)}
+.music-box{background:#fff;padding:20px;border-radius:24px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.music-box iframe{width:100%;height:220px;border-radius:16px;border:0}
+.footer{background:linear-gradient(135deg,#ff4d8d,#a06cd5);color:#fff;padding:50px 20px;text-align:center}
+.footer h2{font-size:32px;line-height:1.2}
 </style>
 </head>
 <body>
-
 <div class="hero">
-  <p>28 NOVEMBER 2008 • SPECIAL DAY</p>
-  <h1>HAPPY BIRTHDAY<br><span>MUHAMMAD EGI<br>SATRIA DHARMA</span> 🖤</h1>
-  <p>Selamat ulang tahun untuk orang paling spesial!</p>
-  <div class="badge">✨ 18th Birthday • 28 November 2026 ✨</div>
-  <div class="count" id="countdown">Menghitung hari...</div>
+<h3>✨ 28 NOVEMBER ✨</h3>
+<h1>HAPPY BIRTHDAY<span>Sayang!</span></h1>
+<p>Untuk orang paling spesial di hidup aku</p>
+<a class="btn" href="#surat">Buka Suratnya 💌</a>
 </div>
 
+<div class="section pink" id="surat">
+<h2>Hai Sayangku 💌</h2>
 <div class="card">
-  <h2>🎂 Tiup Lilinnya!</h2>
-  <div class="cake-wrap">
-    <div class="cake">
-      <span id="flame1" class="flame" style="left:35%">🔥</span>
-      <span id="flame2" class="flame" style="left:55%">🔥</span>
-      🎂
-    </div>
-    <p id="cakeText" style="text-align:center;margin-top:10px">Lilinnya masih nyala! Klik tombol di bawah buat tiup!</p>
-    <button class="blow-btn" onclick="blow()">💨 TIUP LILIN!</button>
-  </div>
+<p>Happy Birthday Sayang!</p><br>
+<p>Selamat ulang tahun ya! Semoga di umur kamu yang baru ini, kamu jadi makin bahagia, makin sehat, rezekinya makin lancar, dan semua mimpi kamu satu-satu tercapai.</p><br>
+<p>Makasih ya udah jadi sayang yang paling sabar, paling baik, paling lucu, dan paling aku sayang.</p><br>
+<p><b>- Dari yang paling sayang sama kamu, Dea</b></p>
+</div>
+<img class="big-img" src="https://i.postimg.cc/QxB0QkZ9/IMG-20251115-WA0015.jpg">
 </div>
 
-<div class="card">
-  <h2>💌 Ucapan Panjang Untuk Egi</h2>
-  <p>
-  Happy birthday, Egi! 🖤<br><br>
-  Hari ini 28 November, hari dimana orang paling nyebelin tapi paling aku sayang lahir ke dunia. Gak kerasa ya kita udah sejauh ini.
-  <br><br>
-  Semoga di umur kamu yang baru ini, kamu jadi makin dewasa, makin sukses, makin ganteng, rezekinya lancar, cita-cita kamu semuanya tercapai satu-satu. Semoga kamu selalu sehat, selalu bahagia, dan selalu dikelilingi orang-orang yang sayang sama kamu.
-  <br><br>
-  Makasih ya udah selalu ada buat aku, udah sabar ngadepin aku yang kadang ngeselin ini. Aku bersyukur banget bisa kenal kamu.
-  <br><br>
-  Semoga tahun ini jadi tahun terbaik buat kamu. Aku disini akan selalu dukung kamu, apapun itu. Happy birthday sayang! Semoga semua doa baik balik ke kamu!
-  <br><br>
-  <b>- Dari Dea Salsabila, yang selalu sayang sama kamu 🖤</b>
-  </p>
+<div class="section peach">
+<h2>Tiup Lilinnya Sayang! 🎂</h2>
+<p style="margin-bottom:15px">Make a wish dulu ya!</p>
+<img class="cake-img" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=800&auto=format&fit=crop">
+<p style="margin-top:12px;font-weight:600;color:#ff4d8d">Kue cantik untuk orang yang paling cantik di hatiku 💕</p>
 </div>
 
-<div class="card">
-  <h2>📸 Galeri Kenangan Kita</h2>
-  <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=600" alt="Foto 1">
-    <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=600" alt="Foto 2">
-    <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600" alt="Foto 3">
-    <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600" alt="Foto 4">
-    <p>⬆️ Nanti kalau mau ganti ke foto asli kalian, tinggal ganti linknya aja!</p>
-  </div>
+<div class="section purple">
+<h2>Kenapa Aku Sayang Kamu? 🥺</h2>
+<div class="card">💖 <b>1. Kamu Bikin Aku Nyaman</b><br>Di deket kamu tuh rasanya tenang banget.</div>
+<div class="card">😂 <b>2. Kamu Lucu Banget</b><br>Ketawa kamu tuh candu.</div>
+<div class="card">🫶 <b>3. Kamu Selalu Ada</b><br>Di saat aku seneng maupun sedih.</div>
+<div class="gallery">
+<img src="https://i.postimg.cc/QxB0QkZ9/IMG-20251115-WA0015.jpg">
+<img src="https://i.postimg.cc/G2Y0QJ5L/IMG-20251115-WA0016.jpg">
+<img src="https://i.postimg.cc/8c4V9kXk/IMG-20251115-WA0017.jpg">
+<img src="https://i.postimg.cc/1XyY9kZp/IMG-20251115-WA0018.jpg">
+</div>
 </div>
 
-<div class="card">
-  <h2>🖤 10 Alasan Kenapa Aku Sayang Egi</h2>
-  <div class="reason">1. Senyumnya bikin hari aku langsung cerah</div>
-  <div class="reason">2. Selalu sabar ngadepin aku</div>
-  <div class="reason">3. Lucu banget kalo lagi ngambek</div>
-  <div class="reason">4. Selalu bikin aku ketawa</div>
-  <div class="reason">5. Gantengnya gak ada obat</div>
-  <div class="reason">6. Selalu ada pas aku butuh</div>
-  <div class="reason">7. Suaranya enak didenger</div>
-  <div class="reason">8. Baik banget ke semua orang</div>
-  <div class="reason">9. Bikin aku ngerasa spesial terus</div>
-  <div class="reason">10. Karena dia ya dia, Muhammad Egi Satria Dharma!</div>
-</div>
-
-<div class="card">
-  <h2>💌 Surat Cinta Untuk Egi</h2>
-  <p class="letter">Untuk Egi,
-
-Hai! Kalau kamu baca ini, berarti website ini berhasil aku buat buat kamu. Hehehe.
-
-Aku gak jago ngomong langsung, jadi aku tulis aja disini. Aku tuh seneng banget bisa ketemu kamu. Dari sekian banyak orang di dunia, kenapa harus kamu yang bikin aku senyaman ini?
-
-Terima kasih udah jadi tempat cerita aku, tempat ketawa aku, dan tempat pulang aku.
-
-Di hari ulang tahun kamu ini, aku cuma mau bilang: aku sayang banget sama kamu. Tetap jadi Egi yang aku kenal ya. Jangan berubah.
-
-Selamat ulang tahun, sayangku.
-
-Peluk jauh dari Dea 🖤
-  </p>
-</div>
-
-<div class="card">
-  <h2>🎵 Lagu Untuk Kamu</h2>
-  <p>Putar lagunya sambil baca suratnya ya!</p>
-  <audio controls loop>
-    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-  </audio>
-  <p style="font-size:13px;color:#888;margin-top:10px">Nanti ganti link lagunya sama lagu favorit kalian ya!</p>
-</div>
-
-<div class="footer">
-  Made with love 🖤 by Dea Salsabila<br>
-  For Muhammad Egi Satria Dharma • 28 November
-</div>
-
-<script>
-  function updateCount(){
-    const target = new Date('2026-11-28T00:00:00');
-    const now = new Date();
-    const diff = target - now;
-    if(diff <= 0){ document.getElementById('countdown').innerText = "🎉 HARI INI ULTAH EGI! 🎉"; return; }
-    const days = Math.floor(diff / (1000*60*60*24));
-    document.getElementById('countdown').innerText = "⏳ " + days + " Hari Lagi Menuju Ultah Egi!";
-  }
-  updateCount();
-  let blown = false;
-  function blow(){
-    if(blown) return;
-    blown = true;
-    document.getElementById('flame1').style.display='none';
-    document.getElementById('flame2').style.display='none';
-    document.getElementById('cakeText').innerText = "YEAYY!! Lilinnya padam! 🎉 Semua doa kamu terkabul ya, Egi! Make a wish!";
-    alert("🎉 HORE! Lilinnya padam! Selamat ulang tahun Egi! Semoga semua wish kamu terkabul!");
-  }
-</script>
-</body>
-</html>
+<div class="section blue">
+<h
